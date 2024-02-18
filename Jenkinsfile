@@ -56,6 +56,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploy"
+                sh '''
+                docker compose up -d
+                '''
             }
         }
         stage('Publish') {
