@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Copy env"
                 sh '''
-                cp /root/simple-apps/.env apps/
+                cp /root/simple-apps/apps/.env apps/
                 '''
             }
         }
